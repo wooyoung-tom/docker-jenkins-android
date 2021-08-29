@@ -1,6 +1,6 @@
 # 🐳 Docker-Jenkins Android (based on Ubuntu)
 
-![Version badge](https://img.shields.io/badge/version-1.0-green.svg)
+![Version badge](https://img.shields.io/badge/version-1.1-green.svg)
 ![License badge](https://img.shields.io/badge/License-MIT-blue.svg)
 
 Jenkins Docker Image for __Android CI__.
@@ -13,17 +13,23 @@ Jenkins Docker Image for __Android CI__.
 # Usage (with Docker CLI)
 ## Simply build your image
 
-`docker build -t [Your image name] .`
+```
+docker build -t [Your image name] .
+```
 
 ## Simply run your image
 
-`docker run -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home [Your image name]`
+```
+docker run -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home [Your image name]
+```
 
 - It will automatically create a `jenkins_home` in your home directory for docker volume.
 
 ## Run with Container name (Optional)
 
-`docker run --name [Your container name] -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home [Your image name]`
+```
+docker run --name [Your container name] -p 8080:8080 -p 50000:50000 -v ~/jenkins_home:/var/jenkins_home [Your image name]
+```
 
 # Versions
 
